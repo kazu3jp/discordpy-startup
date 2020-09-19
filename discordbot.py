@@ -5,7 +5,7 @@ import discord
 from googletrans import Translator
 
 bot = commands.Bot(command_prefix='/')
-token = os.environ['NzU2ODg4MTYwNTkxNDEzMzE5.X2YZBw.nB6NGpQlObRwEt6RtZBMMBReJv8']
+token = os.environ['DISCORD_BOT_TOKEN']
 
 
 @bot.event
