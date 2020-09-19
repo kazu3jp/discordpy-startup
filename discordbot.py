@@ -23,15 +23,15 @@ async def ping(ctx):
 # 自分のBotのアクセストークンに置き換えてください
 
 # 接続に必要なオブジェクトを生成
-client = discord.Client()
+#client = discord.Client()
 
 # 起動時に動作する処理
-@client.event
+@bot.event
 async def on_ready():
     # 起動したらターミナルにログイン通知が表示される
     print('ログインしました')
 
-@client.event
+@bot.event
 async def on_reaction_add(reaction, user):
     print("emoji-id")
     print(reaction.emoji.id)
@@ -52,7 +52,7 @@ async def on_reaction_add(reaction, user):
 
 
 # Botの起動とDiscordサーバーへの接続
-client.run(token)
+#client.run(token)
 
 
 bot.run(token)
